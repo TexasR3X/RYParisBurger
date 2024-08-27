@@ -29,5 +29,7 @@ nav li a {
 }
 
 div.imgHeader {
-    background: #ddd url(../images/hero-image.jpg) center center;
+    background: #ddd url(../images/hero-image.jpg) top center;
+    background-size: cover;
+    height: 620px;
 }
