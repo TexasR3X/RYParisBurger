@@ -1,17 +1,33 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial;
 }
 
 :root {
-    --orange: #ff9900;
+    --orange: #f90;
 }
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: var(--orange);
+    padding: 10px 60px;
+    border-bottom: 3px solid #fff;
 }
 
+nav img {
+    height: 80px;
+}
 nav li {
     display: inline;
+}
+nav li a {
+    text-decoration: none;
+    color: #222;
+    margin: 0 15px;
+}
+
+div.imgHeader {
+    background: #ddd url(../images/hero-image.jpg) center center;
 }
