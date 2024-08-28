@@ -52,6 +52,22 @@ section {
 h2 {
     margin: 15px 0;
 }
-#breakfastIdeas {background: var(--lightBlue) url(../images/breakfast-ideas.jpg);}
-#vegetarianIdeas {background: var(--lightBlue) url(../images/vegetarian-ideas.jpg);}
-#coldWeatherDinners {background: var(--lightBlue) url(../images/cold-weather-dinners.jpeg);}
+div.imgContainer {
+    display: flex;
+}
+div.img {
+    height: 200px;
+    width: 500px;
+} 
+#breakfastIdeas:first-child {
+    background: var(--lightBlue) url(../images/breakfast-ideas.jpg) center center;
+    background-size: cover;
+}
+#vegetarianIdeas:first-child {
+    background: var(--lightBlue) url(../images/vegetarian-ideas.jpg) center center;
+    background-size: cover;
+}
+#coldWeatherDinners:first-child {
+    background: var(--lightBlue) url(../images/cold-weather-dinners.jpeg) center center;
+    background-size: cover;
+}
