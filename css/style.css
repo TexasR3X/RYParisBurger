@@ -6,6 +6,7 @@
 
 :root {
     --orange: #f90;
+    --lightBlue: #dedeff;
     --pageIndent: 60px;
 }
 header {
@@ -45,9 +46,12 @@ div.imgHeader > div {
     padding: 10px 20px;
 }
 
-div.section {
+section {
     padding: 20px var(--pageIndent);
 }
 h2 {
     margin: 15px 0;
 }
+#breakfastIdeas {background: var(--lightBlue) url(../images/breakfast-ideas.jpg);}
+#vegetarianIdeas {background: var(--lightBlue) url(../images/vegetarian-ideas.jpg);}
+#coldWeatherDinners {background: var(--lightBlue) url(../images/cold-weather-dinners.jpeg);}
