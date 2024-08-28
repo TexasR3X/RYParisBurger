@@ -6,13 +6,14 @@
 
 :root {
     --orange: #f90;
+    --pageIndent: 60px;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: var(--orange);
-    padding: 10px 60px;
+    padding: 10px var(--pageIndent);
     border-bottom: 3px solid #fff;
 }
 
@@ -42,4 +43,11 @@ div.imgHeader > div {
     font-size: 36px;
     background: #fff;
     padding: 10px 20px;
+}
+
+div.section {
+    padding: 20px var(--pageIndent);
+}
+h2 {
+    margin: 15px 0;
 }
