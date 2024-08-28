@@ -29,4 +29,17 @@ div.imgHeader {
     background: #ddd url(../images/hero-image.jpg) top center;
     background-size: cover;
     height: 620px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+div.imgHeader > div {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    bottom: 50px;
+    font-size: 36px;
+    background: #fff;
+    padding: 10px 20px;
 }
