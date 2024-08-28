@@ -30,7 +30,7 @@ nav a {
 div.imgHeader {
     background: #ddd url(../images/hero-image.jpg) top center;
     background-size: cover;
-    height: 620px;
+    height: 430px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -51,29 +51,30 @@ section {
 }
 h2 {margin: 15px 0;}
 p {font-size: 18px;}
-div.imgContainer {
+div.imgSection {
     display: flex;
     justify-content: space-between;
     margin: 40px 0;
 }
-div.img > :first-child {
+div.img {
     height: 225px;
     width: 300px;
 }
-div.img > :last-child {
+div.imgText {
     padding: 15px;
     text-align: center;
     font-weight: bold;
+    background: #fff;
 }
-#breakfastIdeas > :first-child {
+#breakfastIdeas {
     background: var(--lightBlue) url(../images/breakfast-ideas.jpg) center center;
     background-size: cover;
 }
-#vegetarianIdeas > :first-child {
+#vegetarianIdeas {
     background: var(--lightBlue) url(../images/vegetarian-ideas.jpg) center center;
     background-size: cover;
 }
-#coldWeatherDinners > :first-child {
+#coldWeatherDinners {
     background: var(--lightBlue) url(../images/cold-weather-dinners.jpeg) center center;
     background-size: cover;
 }
