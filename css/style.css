@@ -46,8 +46,9 @@ div.imgHeader > div {
     padding: 10px 20px;
 }
 
-section {
-    padding: 20px var(--pageIndent);
+section {padding: 20px var(--pageIndent);}
+section:nth-child(even) {
+    background: var(--lightBlue);
 }
 h2 {margin: 15px 0;}
 p {font-size: 18px;}
