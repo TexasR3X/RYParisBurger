@@ -5,8 +5,8 @@
 }
 
 :root {
-    --orange: #f90;
-    --lightBlue: #dedeff;
+    --orange: #fa0;
+    --lightBlue: #e8e8f7;
     --pageIndent: 60px;
 }
 header {
@@ -28,7 +28,7 @@ nav a {
 }
 
 div.imgHeader {
-    background: #ddd url(../images/hero-image.jpg) top center;
+    background: var(--lightBlue) url(../images/hero-image.jpg) top center;
     background-size: cover;
     height: 430px;
     position: relative;
@@ -84,15 +84,15 @@ div.imgText {
     background-size: cover;
 }
 #fajitaPeppers {
-    background: var(--lightBlue) url(../images/breakfast-ideas.jpg) center center;
+    background: var(--lightBlue) url(../images/fajita-peppers.jpeg) center center;
     background-size: cover;
 }
 #muffins {
-    background: var(--lightBlue) url(../images/vegetarian-ideas.jpg) center center;
+    background: var(--lightBlue) url(../images/muffins.jpeg) center center;
     background-size: cover;
 }
 #eggplantParmesan {
-    background: var(--lightBlue) url(../images/cold-weather-dinners.jpeg) center center;
+    background: var(--lightBlue) url(../images/eggplant-parmesan.jpg) center center;
     background-size: cover;
 }
 /*  */
