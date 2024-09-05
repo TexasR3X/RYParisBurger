@@ -9,13 +9,18 @@
     --lightBlue: #e8e8f7;
     --pageIndent: 60px;
 }
-header {
+header, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: var(--orange);
+}
+header {
     padding: 10px var(--pageIndent);
     border-bottom: 3px solid #fff;
+}
+footer {
+    padding: 40px var(--pageIndent);
 }
 
 header img {
@@ -24,16 +29,29 @@ header img {
 nav a {
     text-decoration: none;
     color: #222;
+}
+header nav a {
     margin: 0 15px;
+    font-size: 16px;
+}
+footer nav a {
+    margin: 0 10px;
+    font-size: 14px;
 }
 
 div.imgHeader {
-    background: var(--lightBlue) url(../images/hero-image.jpg) top center;
-    background-size: cover;
     height: 430px;
     position: relative;
     display: flex;
     justify-content: center;
+}
+div.homePage {
+    background: var(--lightBlue) url(../images/hero-image.jpg) top center;
+    background-size: cover;
+}
+div.recipePage {
+    background: var(--lightBlue) url(../images/burger.jpg) center center;
+    background-size: cover;
 }
 
 h1 {
@@ -47,9 +65,7 @@ h1 {
 }
 
 section {padding: 20px var(--pageIndent);}
-section:nth-child(even) {
-    background: var(--lightBlue);
-}
+section:nth-child(even) {background: var(--lightBlue);}
 h2 {margin-top: 15px;}
 p {
     font-size: 18px;
