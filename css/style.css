@@ -8,6 +8,7 @@
     --orange: #fa0;
     --lightBlue: #e8e8f7;
     --pageIndent: 60px;
+    --black: #2e2e2e;
 }
 header, footer {
     display: flex;
@@ -28,7 +29,7 @@ header img {
 }
 nav a {
     text-decoration: none;
-    color: #222;
+    color: var(--black);
 }
 header nav a {
     margin: 0 15px;
@@ -126,3 +127,6 @@ div.borderedImgs div.img {
     border: 10px solid var(--lightBlue);
     /* size */
 }
+
+
+td {border: 1px solid var(--black);}
