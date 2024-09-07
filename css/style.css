@@ -129,8 +129,12 @@ div.borderedImgs div.img {
 div.cookingInfo {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
-div.cookingInfo div {width: 28%;}
+div.cookingInfo div {
+    width: 28%;
+    padding: 5px 0;
+}
 
 blockquote {
     margin: 0 var(--pageIndent);
@@ -141,6 +145,14 @@ blockquote {
     text-align: center;
 }
 
+.columnContainer {
+    display: flex;
+}
+
+ul, ol {
+    margin-left: 16px;
+}
+
 li {
-    font-size: 14px;
+    font-size: 15px;
 }
