@@ -3,13 +3,13 @@
     padding: 0;
     font-family: Arial;
 }
-
 :root {
     --orange: #fa0;
     --lightBlue: #e8e8f7;
     --pageIndent: 60px;
     --black: #2e2e2e;
 }
+
 header, footer {
     display: flex;
     justify-content: space-between;
@@ -128,5 +128,10 @@ div.borderedImgs div.img {
     /* size */
 }
 
-
-td {border: 1px solid var(--black);}
+div.cookingInfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.cookingInfo div {
+    width: 28%;
+}
