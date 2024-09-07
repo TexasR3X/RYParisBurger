@@ -7,7 +7,7 @@
 :root {
     --orange: #fa0;
     --red: #950000;
-    --darkerGray: #aaa;
+    --darkerGray: #808080;
     --gray: #dcdee0;
     --lightGray: #efefef;
     --black: #2e2e2e;
@@ -131,17 +131,20 @@ div.borderedImgs div.img {
     border: 10px solid var(--gray);
     /* size */
 }
+
 div.recipeTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 35px;
 }
 div.recipeTitle > div:nth-child(2) i {
     color: var(--red);
     margin: 0 -3px;
 }
 div.recipeTitle > div:nth-child(2) strong {
-    padding-left: 15px;
+    flex-grow: 1;
+    text-align: end;
 }
 div.recipeTitle > div:nth-child(3) i {
     border: 2px solid var(--darkerGray);
@@ -154,11 +157,14 @@ div.recipeTitle > div:nth-child(3) button {
     color: var(--white);
     border: 0;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 div.recipeTitle > div {
     display: flex;
     align-items: center;
+    width: 190px;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 div.cookingInfo {
