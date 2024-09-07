@@ -137,7 +137,7 @@ div.cookingInfo div {
 }
 
 blockquote {
-    margin: 0 var(--pageIndent);
+    margin: 0;
     padding: 30px 10%;
     background: var(--lightGray);
     font-weight: bold;
@@ -145,14 +145,15 @@ blockquote {
     text-align: center;
 }
 
-.columnContainer {
+section.columnContainer {
     display: flex;
+    justify-content: space-between;
 }
+div.leftColumn {width: 40%;}
+div.rightColumn {width: 50%;}
 
-ul, ol {
-    margin-left: 16px;
-}
-
-li {
-    font-size: 15px;
+ul, ol {margin: 10px 0 10px 16px;}
+li {font-size: 15px;}
+ol li {
+    margin-bottom: 20px;
 }
