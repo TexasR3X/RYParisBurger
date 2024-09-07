@@ -6,18 +6,14 @@
 }
 :root {
     --orange: #fa0;
-    --red: #c80000;
+    --red: #950000;
+    --darkerGray: #aaa;
     --gray: #dcdee0;
     --lightGray: #efefef;
-    --pageIndent: 60px;
     --black: #2e2e2e;
-}
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    --white: #fff;
+
+    --pageIndent: 60px;
 }
 
 header, footer {
@@ -135,10 +131,34 @@ div.borderedImgs div.img {
     border: 10px solid var(--gray);
     /* size */
 }
-
+div.recipeTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 div.recipeTitle > div:nth-child(2) i {
     color: var(--red);
     margin: 0 -3px;
+}
+div.recipeTitle > div:nth-child(2) strong {
+    padding-left: 15px;
+}
+div.recipeTitle > div:nth-child(3) i {
+    border: 2px solid var(--darkerGray);
+    color: var(--darkerGray);
+    border-radius: 50px;
+    padding: 5px;
+}
+div.recipeTitle > div:nth-child(3) button {
+    background: var(--red);
+    color: var(--white);
+    border: 0;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+div.recipeTitle > div {
+    display: flex;
+    align-items: center;
 }
 
 div.cookingInfo {
