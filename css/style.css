@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: Arial;
+    color: var(--black);
 }
 :root {
     --orange: #fa0;
-    --lightBlue: #e8e8f7;
+    --gray: #dcdee0;
+    --lightGray: #efefef;
     --pageIndent: 60px;
     --black: #2e2e2e;
 }
@@ -18,15 +20,10 @@ header, footer {
 }
 header {
     padding: 10px var(--pageIndent);
-    border-bottom: 3px solid #fff;
 }
-footer {
-    padding: 40px var(--pageIndent);
-}
+footer {padding: 40px var(--pageIndent);}
 
-header img {
-    height: 80px;
-}
+header img {height: 80px;}
 nav a {
     text-decoration: none;
     color: var(--black);
@@ -47,11 +44,11 @@ div.imgHeader {
     justify-content: center;
 }
 div.homePage {
-    background: var(--lightBlue) url(../images/hero-image.jpg) top center;
+    background: var(--gray) url(../images/hero-image.jpg) top center;
     background-size: cover;
 }
 div.recipePage {
-    background: var(--lightBlue) url(../images/burger.jpg) center center;
+    background: var(--gray) url(../images/burger.jpg) center center;
     background-size: cover;
 }
 
@@ -66,8 +63,9 @@ h1 {
 }
 
 section {padding: 20px var(--pageIndent);}
-section:nth-child(even) {background: var(--lightBlue);}
+.gray {background: var(--gray);}
 h2 {margin-top: 15px;}
+h4 {margin: 20px 0 0 0;}
 p {
     font-size: 18px;
     padding: 15px 0;
@@ -89,42 +87,42 @@ div.imgText {
     background: #fff;
 }
 #breakfastIdeas {
-    background: var(--lightBlue) url(../images/breakfast-ideas.jpg) center center;
+    background: var(--gray) url(../images/breakfast-ideas.jpg) center center;
     background-size: cover;
 }
 #vegetarianIdeas {
-    background: var(--lightBlue) url(../images/vegetarian-ideas.jpg) center center;
+    background: var(--gray) url(../images/vegetarian-ideas.jpg) center center;
     background-size: cover;
 }
 #coldWeatherDinners {
-    background: var(--lightBlue) url(../images/cold-weather-dinners.jpeg) center center;
+    background: var(--gray) url(../images/cold-weather-dinners.jpeg) center center;
     background-size: cover;
 }
 #fajitaPeppers {
-    background: var(--lightBlue) url(../images/fajita-peppers.jpeg) center center;
+    background: var(--gray) url(../images/fajita-peppers.jpeg) center center;
     background-size: cover;
 }
 #muffins {
-    background: var(--lightBlue) url(../images/muffins.jpeg) center center;
+    background: var(--gray) url(../images/muffins.jpeg) center center;
     background-size: cover;
 }
 #eggplantParmesan {
-    background: var(--lightBlue) url(../images/eggplant-parmesan.jpg) center center;
+    background: var(--gray) url(../images/eggplant-parmesan.jpg) center center;
     background-size: cover;
 }
 /*  */
 #bengalBurger {
-    background: var(--lightBlue) url(../images/bengal-burger.jpg) center center;
+    background: var(--gray) url(../images/bengal-burger.jpg) center center;
     background-size: cover;
 }
 #pizza {
-    background: var(--lightBlue) url(../images/pizza.jpeg) center center;
+    background: var(--gray) url(../images/pizza.jpeg) center center;
     background-size: cover;
 }
 /*  */
 
 div.borderedImgs div.img {
-    border: 10px solid var(--lightBlue);
+    border: 10px solid var(--gray);
     /* size */
 }
 
@@ -132,6 +130,17 @@ div.cookingInfo {
     display: flex;
     flex-wrap: wrap;
 }
-div.cookingInfo div {
-    width: 28%;
+div.cookingInfo div {width: 28%;}
+
+blockquote {
+    margin: 0 var(--pageIndent);
+    padding: 30px 10%;
+    background: var(--lightGray);
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+li {
+    font-size: 14px;
 }
