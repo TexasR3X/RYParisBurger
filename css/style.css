@@ -58,20 +58,21 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-}
-div.heroImg h1 {
     position: absolute;
     bottom: 50px;
     font-size: 36px;
     background: #fff;
     padding: 10px 20px;
 }
-div.recipeTitle h1 {font-size: 40px;}
 
 section {padding: 20px var(--pageIndent);}
 .gray {background: var(--gray);}
 h2 {margin-top: 15px;}
-h4 {margin: 20px 0 0 0;}
+h4 {
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    margin-bottom: -8px;
+}
 p {
     font-size: 18px;
     padding: 15px 0;
@@ -96,7 +97,7 @@ div.imgText {
     background: var(--gray) url(../images/breakfast-ideas.jpg) center center;
     background-size: cover;
 }
-#vegetarianIdeas {
+#vegetarianIdeas, #vegetarianIdeas2 {
     background: var(--gray) url(../images/vegetarian-ideas.jpg) center center;
     background-size: cover;
 }
@@ -116,7 +117,6 @@ div.imgText {
     background: var(--gray) url(../images/eggplant-parmesan.jpg) center center;
     background-size: cover;
 }
-/*  */
 #bengalBurger {
     background: var(--gray) url(../images/bengal-burger.jpg) center center;
     background-size: cover;
@@ -125,7 +125,10 @@ div.imgText {
     background: var(--gray) url(../images/pizza.jpeg) center center;
     background-size: cover;
 }
-/*  */
+#burger {
+    background: var(--gray) url(../images/burger.jpg) center center;
+    background-size: cover;
+}
 
 div.borderedImgs div.img {
     border: 10px solid var(--gray);
@@ -138,6 +141,20 @@ div.recipeTitle {
     align-items: center;
     margin-bottom: 35px;
 }
+div.recipeTitle > div {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+div.recipeTitle div:first-child {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    width: auto;
+}
 div.recipeTitle > div:nth-child(2) i {
     color: var(--red);
     margin: 0 -3px;
@@ -146,25 +163,20 @@ div.recipeTitle > div:nth-child(2) strong {
     flex-grow: 1;
     text-align: end;
 }
-div.recipeTitle > div:nth-child(3) i {
+div.recipeTitle > div:last-child i {
     border: 2px solid var(--darkerGray);
     color: var(--darkerGray);
     border-radius: 50px;
     padding: 5px;
+    cursor: pointer;
 }
-div.recipeTitle > div:nth-child(3) button {
+div.recipeTitle > div:last-child button {
     background: var(--red);
     color: var(--white);
     border: 0;
     border-radius: 50px;
     padding: 10px 30px;
-}
-div.recipeTitle > div {
-    display: flex;
-    align-items: center;
-    width: 190px;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 div.cookingInfo {
@@ -197,4 +209,10 @@ ul, ol {margin: 10px 0 10px 16px;}
 li {font-size: 15px;}
 ol li {
     margin-bottom: 20px;
+}
+
+iframe.burgerVideo {
+    width: 747px;
+    height: 420px;
+    border: 0;
 }
