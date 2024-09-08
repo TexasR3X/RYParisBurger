@@ -16,6 +16,7 @@
     --pageIndent: 60px;
 }
 
+/* Header */
 header, footer {
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,6 @@ header, footer {
 }
 header {padding: 10px var(--pageIndent);}
 footer {padding: 40px var(--pageIndent);}
-
 header img {height: 80px;}
 nav a {
     text-decoration: none;
@@ -39,21 +39,23 @@ footer nav a {
     font-size: 14px;
 }
 
+/* Hero Images */
 div.heroImg {
     height: 430px;
     position: relative;
     display: flex;
     justify-content: center;
 }
-div.homePage {
+#homePageImg {
     background: var(--gray) url(../images/hero-image.jpg) top center;
     background-size: cover;
 }
-div.recipePage {
+#recipePageImg {
     background: var(--gray) url(../images/burger.jpg) center center;
     background-size: cover;
 }
 
+/* Semantic Tags */
 h1 {
     text-transform: uppercase;
     font-weight: bold;
@@ -64,19 +66,20 @@ h1 {
     background: #fff;
     padding: 10px 20px;
 }
-
-section {padding: 20px var(--pageIndent);}
-.gray {background: var(--gray);}
 h2 {margin-top: 15px;}
 h4 {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 15px;
     font-weight: bold;
     margin-bottom: -8px;
 }
+section {padding: 20px var(--pageIndent);}
+.gray {background: var(--gray);}
 p {
     font-size: 18px;
     padding: 15px 0;
 }
+
+/* General image styling on index.html */
 div.imgSection {
     display: flex;
     justify-content: space-between;
@@ -86,13 +89,19 @@ div.img {
     height: 225px;
     width: 300px;
 }
-/* Could be or should have a 7:10 ratio, but currently it might not be. */
+div.smallImgs div.img {
+    height: 190px;
+    width: 253px;
+}
+div.borderedImgs div.img {border: 10px solid var(--gray);}
 div.imgText {
     padding: 15px;
     text-align: center;
     font-weight: bold;
     background: #fff;
 }
+
+/* Specific Images (other than hero images) */
 #breakfastIdeas {
     background: var(--gray) url(../images/breakfast-ideas.jpg) center center;
     background-size: cover;
@@ -130,11 +139,18 @@ div.imgText {
     background-size: cover;
 }
 
-div.borderedImgs div.img {
-    border: 10px solid var(--gray);
-    /* size */
+/* Cooking Information */
+div.cookingInfo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+div.cookingInfo div {
+    width: 28%;
+    padding: 5px 0;
 }
 
+/* Recipe Title */
 div.recipeTitle {
     display: flex;
     flex-direction: column;
@@ -179,16 +195,6 @@ div.recipeTitle > div:last-child button {
     cursor: pointer;
 }
 
-div.cookingInfo {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-div.cookingInfo div {
-    width: 28%;
-    padding: 5px 0;
-}
-
 blockquote {
     margin: 0;
     padding: 30px 10%;
@@ -198,6 +204,7 @@ blockquote {
     text-align: center;
 }
 
+/* Recipe Lists */
 section.columnContainer {
     display: flex;
     justify-content: space-between;
@@ -211,6 +218,7 @@ ol li {
     margin-bottom: 20px;
 }
 
+/* Video Iframe */
 iframe.burgerVideo {
     width: 747px;
     height: 420px;
